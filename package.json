@@ -6,15 +6,15 @@
   "private": true,
   "scripts": {
     "test": "nodeunit test",
-    "coveralls": "jscoverage lib && QUICKSORT_COV=1 nodeunit --reporter=lcov test | coveralls"
+    "coveralls": "jscoverage lib && QUICKSORT_COV=1 nodeunit --reporter=lcov test > libcov.info"
   },
   "repository": "git://github.com/alanshaw/nodeunit-lcov-coveralls-example.git",
   "author": "Alan Shaw",
   "dependencies": {},
   "devDependencies": {
-    "nodeunit": "~0.8.1",
-    "jscoverage": "~0.3.7",
-    "coveralls": "~2.0.16"
+    "coveralls": "^2.11.4",
+    "jscoverage": "^0.6.0",
+    "nodeunit": "^0.9.1"
   },
   "license": "MIT"
 }
